@@ -28,7 +28,7 @@ _{This is a detailed description of your application. Give as much detail as nee
 
 * _Any known issues_
 
-* _Please reach out with any questions or concerns to [eliot.lauren@gmail.com]_
+* _Please reach out with any questions or concerns to [eliot.lauren@gmail.com](eliot.lauren@gmail.com)_
 
 ## License
 
