@@ -8,8 +8,11 @@
 
 * _C#_
 * _.NET_
-* _you used in your project_
-* _here_
+* _HTML_
+* _MVC_
+* _SQL Workbench_
+* _Entity Framework_
+* _add here_
 
 ## Description
 
@@ -21,8 +24,34 @@ _{This is a detailed description of your application. Give as much detail as nee
 * _Open your terminal (e.g., Terminal or GitBash) and navigate to this project's production directory called "ProjectName"._
 * _In the command line, run the command ``dotnet run`` to compile and execute the console application. Since this is a console application, you'll interact with it through text commands in your terminal._
 * _Optionally, you can run ``dotnet build`` to compile this console app without running it._
-* _If we want to run our project in production mode with a watcher, we can use a command line flag to specify that we want to run the "production" profile. ``dotnet watch run --launch-profile "production"``_
+* _This program was built using `Microsoft .NET SDK 5.0.401`, and may not be compatible with other versions._
+
+* _If you want to run the project in production mode with a watcher, you can use a command line flag to specify that you want to run the "production" profile. ``dotnet watch run --launch-profile "production"``_
 *  _Open the browser to [https://localhost:5001]. If you cannot access localhost:5001 it is likely because you have not configured a .NET developer security certificate for HTTPS. To learn about this, review this lesson: [Redirecting to HTTPS and Issuing a Security Certificate.](https://www.learnhowtoprogram.com/c-and-net/basic-web-applications/redirecting-to-https-and-issuing-a-security-certificate)_
+
+## SQL Workbench Configuration
+* _Create an `appsetting.json` file in the "ProjectName" directory of the project._
+* _Insert the following code:_ 
+``{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=localhost;Port=3306;database=best_restaurants;uid=root;pwd=[YOUR-PASSWORD-HERE];"
+  }
+}
+* _You must include your password in the code block section labeled ``"YOUR-PASSWORD-HERE"``_
+* _If you'd like to push this cloned project to a public-facing repository, remember to add the appsettings.json file to your .gitignore first._
+* _Once "appsettings.json" file has been created, navigate back to SQL Workbench._ 
+* _Import the database named ``"project_name.sql"`` from the root directory of the project._ 
+
+## Database Import Instructions
+
+* _Open SQL workbench._
+* _Navigate to the "Administration" tab in SQL Workbench._
+* _Click ``"Data Import/Restore"``_
+* _Select the radio button "Import from Self-Contained File" and include file path to the sql file of this project that has been cloned to your machine._
+* _In "Default Schema to be Imported to" click "New"._
+* _Name the schema ``"project_name"`` then click "OK"._
+* _Once named, switch to ``"Import Progress"`` tab and click ``"Start Import"``._
+
 
 ## Test Instructions
 
