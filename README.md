@@ -32,7 +32,7 @@ _{This is a detailed description of your application. Give as much detail as nee
 ## SQL Workbench Configuration
 * _Create an `appsetting.json` file in the "ProjectName" directory of the project._
 * _Insert the following code:_ 
-``{
+{
   "ConnectionStrings": {
     "DefaultConnection": "Server=localhost;Port=3306;database=best_restaurants;uid=root;pwd=[YOUR-PASSWORD-HERE];"
   }
