@@ -31,7 +31,7 @@ _{This is a detailed description of your application. Give as much detail as nee
 
 ## SQL Workbench Configuration
 * _Create an `appsetting.json` file in the "ProjectName" directory of the project._
-* _Insert the following code:_ 
+* _Within `appsettings.json`, put in the following code, replacing the `uid` and `pwd` values with your own username and password for MySQL._ 
 ```json
 {
     "ConnectionStrings": {
@@ -39,8 +39,6 @@ _{This is a detailed description of your application. Give as much detail as nee
     }
 }
 ```
-* _You must include your user id in the code block section labeled ``"YOUR-USERNAME-HERE"``_
-* _You must include your password in the code block section labeled ``"YOUR-PASSWORD-HERE"``_
 * _If you'd like to push this cloned project to a public-facing repository, remember to add the appsettings.json file to your .gitignore first._
 * _Once "appsettings.json" file has been created, navigate back to SQL Workbench._ 
 * _Import the database named ``"project_name.sql"`` from the root directory of the project._ 
