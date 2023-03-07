@@ -3,9 +3,14 @@ using AnimalShelter.Models;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ProjectName.Controllers
+namespace AnimalShelter.Controllers
 {
   public class HomeController : Controller
   {
+    [HttpGet("/")]
+    public ActionResult Index()
+    {
+      return View();
+    }
   }
 }

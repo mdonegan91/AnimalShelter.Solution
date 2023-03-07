@@ -11,13 +11,32 @@ namespace AnimalShelter.Controllers
 
     public TypesController(AnimalShelterContext db)
     {
-      _db = db;
+      _db = db; 
     }
 
     public ActionResult Index()
     {
-      List<Type> model = _db.Types.ToList();
+      List<Types> model = _db.Types.ToList();
       return View(model);
+    }
+
+    public ActionResult Create()
+    {
+      return View();
+    }
+
+    [HttpPost]
+    public ActionResult Create(Types type)
+    {
+      _db.Types.Add(type);
+      _db.SaveChanges();
+      return RedirectToAction("Index");
+    }
+
+    public ActionResult Details(int id)
+    {
+      Types thisType = _db.Types.FirstOrDefault(type => type.TypeId == id);
+      return View(thisType);
     }
   }
 }

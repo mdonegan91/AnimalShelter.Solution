@@ -17,7 +17,7 @@ namespace AnimalShelter
 
       WebApplication app = builder.Build();
 
-      // app.UseDeveloperExceptionPage();
+      app.UseDeveloperExceptionPage();
       app.UseHttpsRedirection();
       app.UseStaticFiles();
 
