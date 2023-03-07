@@ -1,8 +1,8 @@
-# _{Application Name}_
+# _Animal Shelter_
 
-#### By Eliot Gronstal
+#### By Molly Donegan, Kai Clausen, Eliot Gronstal
 
-#### _{Brief description of application}_
+#### _A program for an animal shelter to track the animals in their facility based on animal type (such as cat or dog). Made during Week 3 of C# at Epicodus Coding School._
 
 ## Technologies Used
 
@@ -12,16 +12,20 @@
 * _MVC_
 * _SQL Workbench_
 * _Entity Framework_
-* _add here_
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_This program contains features that let a shelter worker:_
+
+* _Add types of animals to the system. type is a column on the animals table. A type could be a cat, dog, bunny or any other animal._
+* _Add an animal to the system. An animal should have a name, date of admittance, and breed. When it gets added to the system, it should be added as a particular type._
+* _List animals by breed or type alphabetically._
+* _List animals starting with the ones who have been in the shelter the longest._
 
 ## Setup/Installation Requirements
 
 * _Clone this repo._
-* _Open your terminal (e.g., Terminal or GitBash) and navigate to this project's production directory called "ProjectName"._
+* _Open your terminal (e.g., Terminal or GitBash) and navigate to this project's production directory called "AnimalShelter"._
 * _In the command line, run the command ``dotnet run`` to compile and execute the console application. Since this is a console application, you'll interact with it through text commands in your terminal._
 * _Optionally, you can run ``dotnet build`` to compile this console app without running it._
 * _This program was built using `Microsoft .NET SDK 6.0`, and may not be compatible with other versions._
@@ -30,7 +34,7 @@ _{This is a detailed description of your application. Give as much detail as nee
 *  _Open the browser to [https://localhost:5001]. If you cannot access localhost:5001 it is likely because you have not configured a .NET developer security certificate for HTTPS. To learn about this, review this lesson: [Redirecting to HTTPS and Issuing a Security Certificate.](https://www.learnhowtoprogram.com/c-and-net/basic-web-applications/redirecting-to-https-and-issuing-a-security-certificate)_
 
 ## SQL Workbench Configuration
-* _Create an `appsetting.json` file in the "ProjectName" directory of the project._
+* _Create an `appsetting.json` file in the "AnimalShelter" directory of the project._
 * _Within `appsettings.json`, put in the following code, replacing the `uid` and `pwd` values with your own username and password for MySQL._ 
 ```json
 {
@@ -56,7 +60,7 @@ _{This is a detailed description of your application. Give as much detail as nee
 
 ## Test Instructions
 
-* _Using a shell program, navigate from the root directory, "ClassName.Solution," to the "ClassName.Tests" directory._
+* _Using a shell program, navigate from the root directory, "AnimalShelter.Solution," to the "AnimalShelter.Tests" directory._
 * _Once in the "ClassName.Tests" directory, type ``dotnet restore`` into the console._
 * _After the restore process is complete, type ``dotnet test`` into the console. This will run all written tests and display the test results into the console to review._
 
@@ -64,10 +68,11 @@ _{This is a detailed description of your application. Give as much detail as nee
 
 * _Any known issues_
 
-* _Please reach out with any questions or concerns to [eliot.lauren@gmail.com](eliot.lauren@gmail.com)_
+* _Please reach out with any questions or concerns to [eliot.lauren@gmail.com](eliot.lauren@gmail.com),
+[mollyrdonegan@gmail.com](mollyrdonegan@gmail.com), [kaiclausen123@gmail.com](kaiclausen123@gmail.com)_
 
 ## License
 
 _[MIT](https://opensource.org/license/mit/)_
 
-Copyright (c) _2023_ _Eliot Gronstal_
+Copyright (c) _2023_ _Eliot Gronstal, Kai Clausen, Molly Donegan_

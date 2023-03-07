@@ -13,13 +13,13 @@ namespace ProjectName
 
       builder.Services.AddControllersWithViews();
 
-      builder.Services.AddDbContext<ProjectNameContext>(
-                        dbContextOptions => dbContextOptions
-                          .UseMySql(
-                            builder.Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(builder.Configuration["ConnectionStrings:DefaultConnection"]
-                          )
-                        )
-                      );
+      // builder.Services.AddDbContext<AnimalShelterContext>(
+      //                   dbContextOptions => dbContextOptions
+      //                     .UseMySql(
+      //                       builder.Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(builder.Configuration["ConnectionStrings:DefaultConnection"]
+      //                     )
+      //                   )
+      //                 );
 
       WebApplication app = builder.Build();
 
