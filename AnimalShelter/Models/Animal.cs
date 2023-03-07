@@ -1,27 +1,16 @@
 using System.Collections.Generic;
 using System;
 
-namespace ProjectName.Models
+namespace AnimalShelter.Models
 {
-  public class ClassName
+  public class Animal
   {
-    private int _side1;
-    public int Side1
-    {
-      get { return _side1; }
-      set { _side1 = value; }
-    }
-    public int Side2 { get; set; }
-    private int _side3;
-    private static List<ClassName> _instances = new List<ClassName> {};
+    public int AnimalId { get; set; }
+    public string Breed { get; set; }
 
-    public ClassName(int length1, int length2, int length3)
-    {
-      _side1 = length1;
-      Side2 = length2;
-      _side3 = length3;
-      _instances.Add(this);
-    }
+    public string Name { get; set;}
+
+    public string Date { get; set; }
 
   }
 }

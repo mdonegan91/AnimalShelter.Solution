@@ -39,13 +39,13 @@ _This program contains features that let a shelter worker:_
 ```json
 {
     "ConnectionStrings": {
-        "DefaultConnection": "Server=localhost;Port=3306;database=[PROJECT-NAME];uid=[YOUR-USERNAME-HERE];pwd=[YOUR-PASSWORD-HERE];"
+        "DefaultConnection": "Server=localhost;Port=3306;database=animal_shelter;uid=[YOUR-USERNAME-HERE];pwd=[YOUR-PASSWORD-HERE];"
     }
 }
 ```
 * _If you'd like to push this cloned project to a public-facing repository, remember to add the appsettings.json file to your .gitignore first._
 * _Once "appsettings.json" file has been created, navigate back to SQL Workbench._ 
-* _Import the database named ``"project_name.sql"`` from the root directory of the project._ 
+* _Import the database named ``"animal_shelter.sql"`` from the root directory of the project._ 
 
 ## Database Import Instructions
 
@@ -54,14 +54,14 @@ _This program contains features that let a shelter worker:_
 * _Click ``"Data Import/Restore"``_
 * _Select the radio button "Import from Self-Contained File" and include file path to the sql file of this project that has been cloned to your machine._
 * _In "Default Schema to be Imported to" click "New"._
-* _Name the schema ``"project_name"`` then click "OK"._
+* _Name the schema ``"animal_shelter"`` then click "OK"._
 * _Once named, switch to ``"Import Progress"`` tab and click ``"Start Import"``._
 
 
 ## Test Instructions
 
 * _Using a shell program, navigate from the root directory, "AnimalShelter.Solution," to the "AnimalShelter.Tests" directory._
-* _Once in the "ClassName.Tests" directory, type ``dotnet restore`` into the console._
+* _Once in the "AnimalShelter.Tests" directory, type ``dotnet restore`` into the console._
 * _After the restore process is complete, type ``dotnet test`` into the console. This will run all written tests and display the test results into the console to review._
 
 ## Known Bugs
