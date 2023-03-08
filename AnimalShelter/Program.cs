@@ -13,11 +13,20 @@ namespace AnimalShelter
 
       builder.Services.AddControllersWithViews();
 
-      builder.Services.AddDbContext<AnimalShelterContext>(dbContextOptions => dbContextOptions.UseMySql(builder.Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(builder.Configuration["ConnectionStrings:DefaultConnection"])));
+      // DBConfiguration.ConnectionString = builder.Configuration["ConnectionStrings:DefaultConnection"];
+
+      // builder.Services.AddDbContext<AnimalShelterContext>(dbContextOptions => dbContextOptions.UseMySql(builder.Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(builder.Configuration["ConnectionStrings:DefaultConnection"])));
+      builder.Services.AddDbContext<AnimalShelterContext>(
+                        dbContextOptions => dbContextOptions
+                          .UseMySql(
+                            builder.Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(builder.Configuration["ConnectionStrings:DefaultConnection"]
+                          )
+                        )
+                      );
 
       WebApplication app = builder.Build();
 
-      app.UseDeveloperExceptionPage();
+      // app.UseDeveloperExceptionPage();
       app.UseHttpsRedirection();
       app.UseStaticFiles();
 
