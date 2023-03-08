@@ -35,7 +35,7 @@ namespace AnimalShelter.Controllers
 
     public ActionResult Details(int id)
     {
-      Types thisType = _db.Types.FirstOrDefault(type => type.TypeId == id);
+      Types thisType = _db.Types.FirstOrDefault(type => type.TypesId == id);
       return View(thisType);
     }
   }
